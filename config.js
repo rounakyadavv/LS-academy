@@ -21,7 +21,7 @@ window.LS_ACADEMY_CONFIG = {
     documents: ["Recent school marksheet", "One passport-size photograph", "Parent contact details"]
   },
   courses: [
-    { className: "Class 9", subjects: ["Maths", "Science", "English", "Social Science", "Hindi"], fee: "Contact for fee details", timing: "Foundation batches available morning and evening." },
+    { className: "Class 9", subjects: ["Maths", "Science"], fee: "Contact for fee details", timing: "Foundation batches available morning and evening." },
     { className: "Class 10", subjects: ["Maths", "Science", "English", "Social Science", "Hindi"], fee: "Contact for fee details", timing: "Board-focused batches with weekly tests." },
     { className: "Class 11", subjects: ["Mathematics", "Physics"], fee: "Contact for fee details", timing: "Concept-focused batches for school and entrance readiness." },
     { className: "Class 12", subjects: ["Mathematics", "Physics"], fee: "Contact for fee details", timing: "Board revision, numerical practice, and exam strategy." }
