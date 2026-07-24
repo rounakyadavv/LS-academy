@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LS Academy | Learn Smart | Coaching Institute in Chhindwara</title>
+    <meta name="description" content="LS Academy offers expert coaching for Classes 9-12 in Chhindwara with conceptual learning, weekly tests, practice papers, and individual attention.">
+    <meta name="keywords" content="LS Academy, Learn Smart, coaching institute Chhindwara, Class 9 coaching, Class 10 coaching, Class 11 Maths Physics, Class 12 Maths Physics">
+    <meta name="theme-color" content="#295D3B">
+    <meta property="og:title" content="LS Academy | Learn Smart">
+    <meta property="og:description" content="Building strong foundations for academic excellence for Classes 9-12.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: { heading: ["Poppins", "sans-serif"], body: ["Inter", "sans-serif"] },
+            colors: { primary: "#295D3B", darkgreen: "#1F4B32", ink: "#111111", offwhite: "#F8F8F5", soft: "#EFEFEF" }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bg-offwhite text-ink font-body antialiased">
+    <div id="loader" class="loader" aria-label="Loading LS Academy website">
+      <img src="assets/logo.png" alt="LS Academy" width="180" height="50">
+      <span></span>
+    </div>
+
+    <!-- Sticky navigation -->
+    <header class="site-header" data-reveal>
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8" aria-label="Main navigation">
+        <a href="#home" class="brand-link" aria-label="LS Academy home">
+          <img id="navLogo" src="assets/logo.png" alt="LS Academy logo" width="182" height="50">
+        </a>
+        <button id="menuToggle" class="icon-button lg:hidden" aria-label="Open menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+        <div id="navMenu" class="nav-menu">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#courses">Courses</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#admissions">Admissions</a>
+          <a href="#contact">Contact</a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i data-lucide="moon"></i>
+            <span>Dark</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section id="home" class="hero-section section-pad">
+        <div class="academic-bg" aria-hidden="true"></div>
+        <div class="floating-equations" aria-hidden="true">
+          <span>x² + y²</span><span>F = ma</span><span>πr²</span><span>∑n</span><span>sin θ</span>
+        </div>
+        <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
+          <div data-reveal>
+            <p class="eyebrow">LS Academy • Learn Smart</p>
+            <h1 class="mt-5 max-w-4xl font-heading text-4xl font-extrabold leading-tight text-ink md:text-6xl">
+              Building Strong Foundations for Academic Excellence
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-black/70 dark:text-white/72">
+              Expert guidance for Classes 9-12 with conceptual learning, regular assessments and personalized attention.
+            </p>
+            <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a class="btn-primary" href="#contact"><i data-lucide="calendar-check"></i>Book Free Demo</a>
+              <a class="btn-secondary" href="tel:8839104836"><i data-lucide="phone"></i>Contact Us</a>
+            </div>
+            <div class="mt-10 grid max-w-2xl grid-cols-3 gap-3" id="heroStats"></div>
+          </div>
+          <div class="hero-visual" data-reveal>
+            <div class="glass-panel">
+              <div class="panel-top">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="formula-board">
+                <p>Concept → Practice → Results</p>
+                <div class="equation-line">a² + b² = c²</div>
+                <div class="chart-bars"><span></span><span></span><span></span><span></span></div>
+              </div>
+              <div class="mini-cards">
+                <div><i data-lucide="book-open-check"></i><strong>Conceptual Classes</strong><small>Foundation first learning</small></div>
+                <div><i data-lucide="clipboard-check"></i><strong>Weekly Assessment</strong><small>Progress you can measure</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose section -->
+      <section id="about" class="section-pad bg-white dark:bg-[#101713]">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Why Choose LS Academy</p>
+            <h2>Focused academic coaching with a calm, serious learning environment.</h2>
+            <p>Students get the structure of regular preparation and the attention needed to build confidence chapter by chapter.</p>
+          </div>
+          <div id="whyGrid" class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"></div>
+        </div>
+      </section>
+
+      <!-- Courses section -->
+      <section id="courses" class="section-pad">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Courses</p>
+            <h2>Complete support for Classes 9-12.</h2>
+            <p>Every course is designed around school performance, board readiness, and consistent practice.</p>
+          </div>
+          <div id="courseGrid" class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4"></div>
+        </div>
+      </section>
+
+      <!-- Teaching methodology section -->
+      <section class="section-pad bg-primary text-white">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading light" data-reveal>
+            <p class="eyebrow light">Teaching Methodology</p>
+            <h2>A repeatable system for better understanding and better marks.</h2>
+            <p>LS Academy combines clear explanation, disciplined practice, and frequent review.</p>
+          </div>
+          <div id="timeline" class="methodology-timeline mt-12"></div>
+        </div>
+      </section>
+
+      <!-- Features section -->
+      <section class="section-pad bg-white dark:bg-[#101713]">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Features</p>
+            <h2>Built for consistent study habits.</h2>
+            <p>From printed notes to parent interaction, every feature supports steady improvement.</p>
+          </div>
+          <div id="featureGrid" class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"></div>
+        </div>
+      </section>
+
+      <!-- Results section -->
+      <section class="section-pad">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="results-band" data-reveal>
+            <div>
+              <p class="eyebrow">Results</p>
+              <h2>Progress that students, parents, and teachers can track.</h2>
+              <p>Editable numbers are stored in the config file, so future achievements can be updated instantly.</p>
+            </div>
+            <div id="resultsGrid" class="results-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+      <section class="section-pad bg-white dark:bg-[#101713]">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Testimonials</p>
+            <h2>Parent and student reviews.</h2>
+            <p>Families value consistent updates, clear teaching, and a study environment where students feel confident asking questions.</p>
+          </div>
+          <div class="testimonial-shell mt-12" data-reveal>
+            <button class="icon-button" id="prevTestimonial" aria-label="Previous review"><i data-lucide="chevron-left"></i></button>
+            <article id="testimonialCard" class="testimonial-card"></article>
+            <button class="icon-button" id="nextTestimonial" aria-label="Next review"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery section -->
+      <section id="gallery" class="section-pad">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Gallery</p>
+            <h2>Learning spaces, teaching moments, and academic events.</h2>
+            <p>The gallery uses editable items now and is ready for real classroom photographs when available.</p>
+          </div>
+          <div id="galleryGrid" class="masonry mt-12"></div>
+        </div>
+      </section>
+
+      <!-- Admissions section -->
+      <section id="admissions" class="section-pad bg-white dark:bg-[#101713]">
+        <div class="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8">
+          <div class="section-heading text-left" data-reveal>
+            <p class="eyebrow">Admissions</p>
+            <h2>Start with a demo class and academic counselling.</h2>
+            <p>Students can understand the teaching style, batch level, and preparation plan before completing admission.</p>
+          </div>
+          <div class="admission-panel" data-reveal>
+            <div>
+              <i data-lucide="door-open"></i>
+              <h3 id="admissionTitle"></h3>
+              <p id="admissionNote"></p>
+            </div>
+            <ul id="documentsList"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="section-pad">
+        <div class="mx-auto max-w-4xl px-5 lg:px-8">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Frequently Asked Questions</p>
+            <h2>Quick answers before you visit.</h2>
+          </div>
+          <div id="faqList" class="mt-10 space-y-3"></div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="section-pad bg-primary text-white">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="contact-card" data-reveal>
+            <div>
+              <p class="eyebrow light">Contact LS Academy</p>
+              <h2>Book a free demo class or visit the institute.</h2>
+              <div class="contact-list mt-8">
+                <p><i data-lucide="map-pin"></i><span id="contactAddress"></span></p>
+                <p><i data-lucide="phone"></i><a id="contactPhone" href="#"></a></p>
+                <p><i data-lucide="instagram"></i><a id="contactInstagram" href="#" target="_blank" rel="noreferrer"></a></p>
+                <p><i data-lucide="clock"></i><span id="contactTimings"></span></p>
+              </div>
+              <iframe id="mapsFrame" title="LS Academy location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <label>Name<input type="text" name="name" autocomplete="name" required placeholder="Student or parent name"></label>
+              <label>Phone<input type="tel" name="phone" autocomplete="tel" required placeholder="Mobile number"></label>
+              <label>Class<select name="class" required><option value="">Select class</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></label>
+              <label>Message<textarea name="message" rows="5" placeholder="Tell us which subject or batch you are interested in"></textarea></label>
+              <button class="btn-primary invert" type="submit"><i data-lucide="send"></i>Send Enquiry</button>
+              <p id="formStatus" class="form-status" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Policy pages section -->
+      <section id="policies" class="section-pad bg-white dark:bg-[#101713]">
+        <div class="mx-auto grid max-w-7xl gap-5 px-5 md:grid-cols-2 lg:px-8">
+          <article class="policy-box" data-reveal>
+            <h2>Privacy Policy</h2>
+            <p>LS Academy uses enquiry details only to contact students or parents about courses, batches, demo classes, and admission support. Personal information is not sold or shared for unrelated marketing.</p>
+          </article>
+          <article class="policy-box" data-reveal>
+            <h2>Terms & Conditions</h2>
+            <p>Admission, batch timings, fees, assessments, and study material are managed by LS Academy. Students are expected to attend regularly, complete assignments, and follow classroom discipline.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="mx-auto grid max-w-7xl gap-8 px-5 py-10 md:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
+        <div>
+          <img src="assets/logo.png" alt="LS Academy logo" width="190" height="54">
+          <p class="mt-4 max-w-sm">Premium academic coaching for Classes 9-12 in Chhindwara, focused on conceptual clarity and consistent improvement.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#about">About Us</a>
+          <a href="#courses">Courses</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <a id="footerWhatsApp" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a id="footerInstagram" href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#policies">Privacy Policy</a>
+          <a href="#policies">Terms & Conditions</a>
+        </div>
+      </div>
+      <div class="border-t border-black/10 px-5 py-4 text-center text-sm text-black/60 dark:border-white/10 dark:text-white/60">
+        <span id="copyright"></span>
+      </div>
+    </footer>
+
+    <a id="whatsappFloat" class="floating-action whatsapp" href="#" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><i data-lucide="message-circle"></i></a>
+    <a id="callFloat" class="floating-action call" href="#" aria-label="Call LS Academy"><i data-lucide="phone"></i></a>
+    <button id="scrollTop" class="floating-action top" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
+
+    <script src="config.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
