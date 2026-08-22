@@ -124,6 +124,7 @@ body.menu-open { overflow: hidden; }
 }
 
 .nav-menu a,
+.nav-resource-button,
 .theme-toggle {
   display: inline-flex;
   min-height: 42px;
