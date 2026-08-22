@@ -134,7 +134,36 @@ const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 if (savedTheme === "dark") {
     document.documentElement.classList.add("dark");
 }
+  const resourcesToggle = $("#resourcesToggle");
+  const resourcesModal = $("#resourcesModal");
+  const resourcesClose = $("#resourcesClose");
+  const resourcesOverlay = $("#resourcesOverlay");
+  const resourcesList = $("#resourcesList");
 
+  resourcesList.innerHTML = config.studentResources.map((resource) => `
+    <a class="resource-item" href="${resource.url}" target="_blank" rel="noopener noreferrer">
+      <span class="resource-icon">${icon(resource.icon)}</span>
+      <span class="resource-content">
+        <strong>${resource.title}</strong>
+        <small>${resource.description}</small>
+      </span>
+      ${icon("external-link")}
+    </a>
+  `).join("");
+
+  const closeResources = () => {
+    resourcesModal.classList.remove("open");
+    resourcesModal.setAttribute("aria-hidden", "true");
+  };
+
+  resourcesToggle.addEventListener("click", () => {
+    resourcesModal.classList.add("open");
+    resourcesModal.setAttribute("aria-hidden", "false");
+    lucide.createIcons();
+  });
+
+  resourcesClose.addEventListener("click", closeResources);
+  resourcesOverlay.addEventListener("click", closeResources);
   const menu = $("#navMenu");
   const toggle = $("#menuToggle");
   toggle.addEventListener("click", () => {
