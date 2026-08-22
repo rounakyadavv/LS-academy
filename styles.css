@@ -914,3 +914,193 @@ body.menu-open { overflow: hidden; }
 #copyright a:hover {
   text-decoration: underline;
 }
+/* Student Resources */
+.nav-resource-button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-resource-button svg {
+  width: 15px;
+  height: 15px;
+}
+
+.resources-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease, visibility .2s ease;
+}
+
+.resources-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.resources-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, .55);
+  backdrop-filter: blur(5px);
+}
+
+.resources-panel {
+  position: relative;
+  width: min(520px, 100%);
+  max-height: min(650px, 90vh);
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 24px;
+  background: #f8f8f5;
+  color: #111111;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, .2);
+  transform: translateY(12px) scale(.98);
+  transition: transform .2s ease;
+}
+
+.resources-modal.open .resources-panel {
+  transform: translateY(0) scale(1);
+}
+
+.resources-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #e9ebe7;
+  color: #111;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.resources-heading {
+  padding-right: 45px;
+  margin-bottom: 22px;
+}
+
+.resources-heading h2 {
+  margin: 4px 0 8px;
+}
+
+.resources-heading p:last-child {
+  margin: 0;
+  color: #666;
+  font-size: .9rem;
+}
+
+.resources-list {
+  display: grid;
+  gap: 10px;
+}
+
+.resource-item {
+  display: grid;
+  grid-template-columns: 44px 1fr 20px;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid rgba(41, 93, 59, .12);
+  border-radius: 16px;
+  background: white;
+  color: #111;
+  text-decoration: none;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.resource-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(41, 93, 59, .35);
+  box-shadow: 0 8px 25px rgba(41, 93, 59, .08);
+}
+
+.resource-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #111;
+  color: white;
+}
+
+.resource-icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+.resource-content {
+  min-width: 0;
+}
+
+.resource-content strong {
+  display: block;
+  font-size: .95rem;
+}
+
+.resource-content small {
+  display: block;
+  margin-top: 3px;
+  color: #6a6a6a;
+  font-size: .78rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resource-item > svg {
+  width: 17px;
+  height: 17px;
+  color: #295D3B;
+}
+
+.dark .resources-panel {
+  background: #101713;
+  color: white;
+}
+
+.dark .resources-close {
+  background: #202a24;
+  color: white;
+}
+
+.dark .resources-heading p:last-child {
+  color: rgba(255,255,255,.65);
+}
+
+.dark .resource-item {
+  background: #18221c;
+  color: white;
+  border-color: rgba(255,255,255,.08);
+}
+
+.dark .resource-content small {
+  color: rgba(255,255,255,.6);
+}
+
+@media (max-width: 768px) {
+  .nav-resource-button {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .resources-panel {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+}
