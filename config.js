@@ -13,8 +13,30 @@ window.LS_ACADEMY_CONFIG = {
     email: "admissions@lsacademy.example",
     timings: "Monday to Saturday, 7:00 AM - 8:00 PM",
     mapsQuery: "LS Academy, The Nema House Union Bank Road District Hospital Chhindwara Madhya Pradesh",
-    googleMapsEmbed: "https://www.google.com/maps?q=The%20Nema%20House%2C%20Union%20Bank%20Road%2C%20In%20Front%20of%20District%20Hospital%2C%20Chhindwara%2C%20Madhya%20Pradesh&output=embed"
+        googleMapsEmbed: "https://www.google.com/maps?q=The%20Nema%20House%2C%20Union%20Bank%20Road%2C%20In%20Front%20of%20District%20Hospital%2C%20Chhindwara%2C%20Madhya%20Pradesh&output=embed"
   },
+
+  studentResources: [
+    {
+      title: "Class 10th — Telegram",
+      description: "Join the Class 10 Telegram group",
+      url: "https://t.me/LSacademyclass10th",
+      icon: "send"
+    },
+    {
+      title: "Class 10th — WhatsApp",
+      description: "Join the Class 10 WhatsApp channel",
+      url: "https://whatsapp.com/channel/0029Vb8oqb7HQbS5ZS6iuA2y",
+      icon: "message-circle"
+    },
+    {
+      title: "CBSE Question Banks for 12th",
+      description: "Access Class 12 CBSE question banks",
+      url: "https://t.me/LSacademyclass12th",
+      icon: "file-text"
+    }
+  ],
+
   admissions: {
     currentBatch: "Admissions open for Classes 9 to 12",
     demoNote: "Free demo class available after a short academic counselling call.",
