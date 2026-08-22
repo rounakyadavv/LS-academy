@@ -12,7 +12,7 @@ window.LS_ACADEMY_CONFIG = {
     whatsapp: "918839104836",
     email: "admissions@lsacademy.example",
     timings: "Monday to Saturday, 7:00 AM - 8:00 PM",
-    mapsQuery: "The Nema House Union Bank Road District Hospital Chhindwara Madhya Pradesh",
+    mapsQuery: "LS Academy, The Nema House Union Bank Road District Hospital Chhindwara Madhya Pradesh",
     googleMapsEmbed: "https://www.google.com/maps?q=The%20Nema%20House%2C%20Union%20Bank%20Road%2C%20In%20Front%20of%20District%20Hospital%2C%20Chhindwara%2C%20Madhya%20Pradesh&output=embed"
   },
   admissions: {
@@ -50,7 +50,6 @@ window.LS_ACADEMY_CONFIG = {
     ["Board Exam Preparation", "Answer writing, time management, and past-paper practice complete the cycle.", "award"]
   ],
   features: [
-    ["Air Conditioned Classroom", "Comfortable study environment for long sessions.", "snowflake"],
     ["Smart Learning", "Visual examples and structured explanations for difficult topics.", "monitor-play"],
     ["Printed Notes", "Concise notes for quick revision and organized preparation.", "notebook-tabs"],
     ["Practice Papers", "Regular sheets mapped to chapters and exams.", "files"],
