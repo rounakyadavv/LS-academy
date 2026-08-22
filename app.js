@@ -131,7 +131,7 @@ function setupNavigation() {
   const savedTheme = localStorage.getItem("ls-academy-theme");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+if (savedTheme === "dark") {
     document.documentElement.classList.add("dark");
 }
 
