@@ -920,7 +920,10 @@ body.menu-open { overflow: hidden; }
   border: 0;
   background: transparent;
   color: inherit;
-  font: inherit;
+  font-family: inherit;
+font-size: 14px;
+font-weight: 700;
+line-height: 1;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
