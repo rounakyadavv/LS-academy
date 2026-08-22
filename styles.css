@@ -1112,3 +1112,6 @@ body.menu-open { overflow: hidden; }
     border-radius: 20px;
   }
 }
+.nav-resource-button {
+  white-space: nowrap;
+}
