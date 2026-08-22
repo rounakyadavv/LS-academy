@@ -906,3 +906,11 @@ body.menu-open { overflow: hidden; }
   .contact-card { border-radius: 24px; }
   .floating-action.call { display: grid; }
 }
+#copyright a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#copyright a:hover {
+  text-decoration: underline;
+}
