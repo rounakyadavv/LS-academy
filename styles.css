@@ -919,7 +919,7 @@ body.menu-open { overflow: hidden; }
 .nav-resource-button {
   border: 0;
   background: transparent;
-  color: inherit;
+  color: rgba(17, 17, 17, .72);
   font-family: inherit;
 font-size: 14px;
 font-weight: 700;
