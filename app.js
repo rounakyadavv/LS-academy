@@ -98,7 +98,7 @@ function hydrateInstituteDetails() {
   $("#callFloat").href = `tel:${phone}`;
   $("#footerWhatsApp").href = whatsappUrl;
   $("#footerInstagram").href = config.institute.instagramUrl;
-  $("#copyright").textContent = `© ${new Date().getFullYear()} ${config.institute.name}. All rights reserved.`;
+  $("#copyright").innerHTML = `© ${new Date().getFullYear()} ${config.institute.name}. All rights reserved. · Created by <a href="https://www.instagram.com/rounakyadavv/" target="_blank" rel="noopener noreferrer">@rounakyadavv</a>`;
 
   $("#documentsList").innerHTML = config.admissions.documents.map((documentName) => `
     <li>${icon("check-circle-2")}<span>${documentName}</span></li>
