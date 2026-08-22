@@ -924,6 +924,14 @@ body.menu-open { overflow: hidden; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: background .2s ease, color .2s ease;
+}
+
+.nav-resource-button:hover {
+  background: rgba(41, 93, 59, .10);
+  color: var(--primary);
 }
 
 .nav-resource-button svg {
