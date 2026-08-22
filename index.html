@@ -63,7 +63,25 @@
         </div>
       </nav>
     </header>
+    
+<div id="resourcesModal" class="resources-modal" aria-hidden="true">
+  <div class="resources-overlay" id="resourcesOverlay"></div>
 
+  <div class="resources-panel" role="dialog" aria-modal="true" aria-labelledby="resourcesTitle">
+    <button id="resourcesClose" class="resources-close" type="button" aria-label="Close">
+      <i data-lucide="x"></i>
+    </button>
+
+    <div class="resources-heading">
+      <p class="eyebrow">LS Academy</p>
+      <h2 id="resourcesTitle">Student Resources</h2>
+      <p>Quick access to study groups, updates and question banks.</p>
+    </div>
+
+    <div id="resourcesList" class="resources-list"></div>
+  </div>
+</div>
+    
     <main>
       <!-- Hero section -->
       <section id="home" class="hero-section section-pad">
