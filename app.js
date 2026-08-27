@@ -138,9 +138,11 @@ if (savedTheme === "dark") {
 }
   
     const updateLogo = () => {
-    const isDark = document.documentElement.classList.contains("dark");
-    $("#navLogo").src = isDark ? config.institute.darkLogo : config.institute.logo;
-  };
+  const isDark = document.documentElement.classList.contains("dark");
+  $("#navLogo").src = isDark
+    ? config.institute.darkLogo
+    : config.institute.logo;
+};
 updateLogo();
   const resourcesToggle = $("#resourcesToggle");
   const resourcesModal = $("#resourcesModal");
