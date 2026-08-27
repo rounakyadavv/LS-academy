@@ -136,6 +136,12 @@ const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 if (savedTheme === "dark") {
     document.documentElement.classList.add("dark");
 }
+  
+    const updateLogo = () => {
+    const isDark = document.documentElement.classList.contains("dark");
+    $("#navLogo").src = isDark ? config.institute.darkLogo : config.institute.logo;
+  };
+updateLogo();
   const resourcesToggle = $("#resourcesToggle");
   const resourcesModal = $("#resourcesModal");
   const resourcesClose = $("#resourcesClose");
@@ -186,6 +192,7 @@ if (savedTheme === "dark") {
     $("#themeToggle span").textContent = dark ? "Light" : "Dark";
     $("#themeToggle i").setAttribute("data-lucide", dark ? "sun" : "moon");
     lucide.createIcons();
+    updateLogo();
   });
 }
 
