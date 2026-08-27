@@ -5,6 +5,7 @@ window.LS_ACADEMY_CONFIG = {
     name: "LS Academy",
     tagline: "Learn Smart",
     logo: "assets/logo.png",
+    darkLogo: "assets/logo-dark.png",
     address: "The Nema House, Union Bank Road, In Front of District Hospital, Chhindwara, Madhya Pradesh",
     phone: "8839104836",
     instagram: "@learnsmart_academy",
