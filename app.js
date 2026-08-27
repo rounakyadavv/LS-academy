@@ -252,7 +252,7 @@ function setupRevealAndCounters() {
 }
 
 window.addEventListener("load", () => {
-  window.setTimeout(() => $("#loader").classList.add("hidden"), 350);
+  window.setTimeout(() => $("#loader").classList.add("hidden"), 1500);
 });
 
 renderCards();
