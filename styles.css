@@ -99,7 +99,7 @@ body.menu-open { overflow: hidden; }
 .dark .brand-link img,
 .dark .loader img,
 .dark .footer img {
-  filter: brightness(1.35) drop-shadow(0 8px 18px rgba(0,0,0,.18));
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.18));
 }
 
 .brand-link img {
