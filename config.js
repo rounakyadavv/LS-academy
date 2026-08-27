@@ -10,7 +10,7 @@ window.LS_ACADEMY_CONFIG = {
     instagram: "@learnsmart_academy",
     instagramUrl: "https://www.instagram.com/learnsmart_academy/",
     whatsapp: "918839104836",
-    email: "admissions@lsacademy.example",
+    email: "learnsmartacademy01@gmail.com",
     timings: "Monday to Saturday, 7:00 AM - 8:00 PM",
     mapsQuery: "LS Academy, The Nema House Union Bank Road District Hospital Chhindwara Madhya Pradesh",
         googleMapsEmbed: "https://www.google.com/maps?q=The%20Nema%20House%2C%20Union%20Bank%20Road%2C%20In%20Front%20of%20District%20Hospital%2C%20Chhindwara%2C%20Madhya%20Pradesh&output=embed"
