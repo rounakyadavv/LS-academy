@@ -91,6 +91,8 @@ function hydrateInstituteDetails() {
 
   $("#contactPhone").href = `tel:${phone}`;
   $("#contactPhone").textContent = phone;
+  $("#contactEmail").href = `mailto:${config.institute.email}`;
+  $("#contactEmail").textContent = config.institute.email;
   $("#contactInstagram").href = config.institute.instagramUrl;
   $("#contactInstagram").textContent = config.institute.instagram;
   $("#mapsFrame").src = config.institute.googleMapsEmbed;
