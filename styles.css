@@ -174,17 +174,44 @@ body.menu-open { overflow: hidden; }
   }
 }
 
-/* Background symbol movement */
-@keyframes loaderFloat {
+/* Floating academic symbols */
+.loader-symbol {
+  position: absolute;
+  z-index: 1;
+  color: rgba(41, 93, 59, .10);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  pointer-events: none;
+  user-select: none;
+  animation: loaderSymbolFloat 3.2s ease-in-out infinite;
+}
+
+.loader-symbol-left {
+  left: 16%;
+  bottom: 24%;
+  font-size: clamp(20px, 2.6vw, 34px);
+  transform: rotate(-6deg);
+  animation-delay: -.9s;
+}
+
+.loader-symbol-right {
+  right: 15%;
+  top: 25%;
+  font-size: clamp(22px, 2.8vw, 38px);
+  transform: rotate(7deg);
+  animation-delay: -.3s;
+}
+
+@keyframes loaderSymbolFloat {
   0%,
   100% {
-    opacity: .45;
-    transform: translateY(0);
+    opacity: .35;
+    transform: translateY(0) rotate(-6deg);
   }
 
   50% {
-    opacity: 1;
-    transform: translateY(-10px);
+    opacity: .75;
+    transform: translateY(-12px) rotate(-3deg);
   }
 }
 
