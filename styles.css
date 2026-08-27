@@ -1138,3 +1138,15 @@ line-height: 1;
 .dark .nav-logo.logo-dark {
   display: block;
 }
+/* Theme-specific footer logos */
+.footer-logo.logo-dark {
+  display: none;
+}
+
+.dark .footer-logo.logo-light {
+  display: none;
+}
+
+.dark .footer-logo.logo-dark {
+  display: block;
+}
