@@ -1126,3 +1126,15 @@ line-height: 1;
 .dark .nav-resource-button svg {
   color: rgba(255, 255, 255, .72);
 }
+/* Theme-specific navigation logos */
+.nav-logo.logo-dark {
+  display: none;
+}
+
+.dark .nav-logo.logo-light {
+  display: none;
+}
+
+.dark .nav-logo.logo-dark {
+  display: block;
+}
