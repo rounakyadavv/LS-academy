@@ -1119,3 +1119,10 @@ line-height: 1;
 .nav-resource-button {
   white-space: nowrap;
 }
+.dark .nav-resource-button {
+  color: rgba(255, 255, 255, .72);
+}
+
+.dark .nav-resource-button svg {
+  color: rgba(255, 255, 255, .72);
+}
