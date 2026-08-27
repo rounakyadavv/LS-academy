@@ -83,7 +83,11 @@ function hydrateInstituteDetails() {
   const phone = config.institute.phone;
   const whatsappUrl = `https://wa.me/${config.institute.whatsapp}?text=${encodeURIComponent("Hello LS Academy, I want to book a free demo class.")}`;
 
+  if (document.documentElement.classList.contains("dark")) {
+  $("#navLogo").src = config.institute.darkLogo;
+} else {
   $("#navLogo").src = config.institute.logo;
+}
   setText("#contactAddress", config.institute.address);
   setText("#contactTimings", config.institute.timings);
   setText("#admissionTitle", config.admissions.currentBatch);
