@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Dark rounded background matching your theme -->
+  <rect width="128" height="128" rx="28" fill="#111111" />
+  
+  <!-- Classical Roof -->
+  <polygon points="64,22 22,54 106,54" fill="#295D3B" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" />
+  <rect x="22" y="54" width="84" height="6" fill="#ffffff" rx="1" />
+  
+  <!-- Three Pillars -->
+  <rect x="31" y="60" width="16" height="34" fill="#295D3B" stroke="#ffffff" stroke-width="2" />
+  <rect x="56" y="60" width="16" height="34" fill="#295D3B" stroke="#ffffff" stroke-width="2" />
+  <rect x="81" y="60" width="16" height="34" fill="#295D3B" stroke="#ffffff" stroke-width="2" />
+  
+  <!-- Stepped Base -->
+  <rect x="22" y="94" width="84" height="6" fill="#ffffff" rx="1" />
+  <rect x="16" y="100" width="96" height="6" fill="#ffffff" rx="1" />
+  <rect x="10" y="106" width="108" height="6" fill="#ffffff" rx="1" />
+</svg>
